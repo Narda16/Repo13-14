@@ -1,11 +1,14 @@
-main {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    
+* {
+  background-color: thistle;
 }
 
- .gallery {
+main {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
   line-height: 0;
   -webkit-column-count: 4;
   -webkit-column-gap: 5px;
@@ -19,11 +22,85 @@ main {
   width: 100% !important;
   height: auto !important;
   margin-bottom: 5px;
-}  
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+a span {
+  visibility: hidden;
+}
+
+a:hover span {
+  visibility: visible;
+  color: black;
+}
+
+.title {
+  position: absolute;
+}
 
 
+a {
+  text-decoration: none;
+  break-before: avoid;
+  display: inline-block;
+}
 
 
+/* modal */
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 
- 
+.modal img {
+  max-width: 900px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+}
+
+.modal-content {
+  color: white;
+  position: relative;
+  background-color: #171b20;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Close Button */
+.close {
+  color: #f0b823;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}

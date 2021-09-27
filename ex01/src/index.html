@@ -10,21 +10,58 @@
   <body>
     <main>
       <div class="gallery">
-        <img src="../images/img1.jpg" alt="Man tying shoes" />
-        <img src="../images/img2.jpg" alt="Woman exercising" />
-        <img src="../images/img3.jpg" alt="Nike running shoes" />
-        <img src="../images/img4.jpg" alt="Man skiing" />
-        <img src="../images/img5.jpg" alt="Man lifting weights" />
-        <img src="../images/img6.jpg" alt="Basketball on the ground" />
-        <img src="../images/img7.jpg" alt="Man swimming butterfly" />
-        <img src="../images/img8.jpg" alt="Woman jumping" />
-        <img src="../images/img9.jpg" alt="Running track" />
-        <img
-          src="../images/img10.jpg"
-          alt="Man with bike on top of the mountain"
-        />
+        <a href="image01.html" class="hover">
+          <span class="title"><h1>Marathon</h1></span>
+          <img src="../images/img1.jpg" alt="Man tying shoes" />
+        </a>
+        <a href="image05.html" class="hover">
+          <span class="title"><h1>Weight Lifting</h1></span>
+          <img src="../images/img5.jpg" alt="Man lifting weights"
+        /></a>
+        <a href="image08.html" class="hover">
+          <span class="title"><h1>Jogging</h1></span>
+          <img src="../images/img8.jpg" alt="Woman jumping"
+        /></a>
+        <a href="image02.html" class="hover">
+          <span class="title"><h1>Gymnastics</h1></span>
+          <img src="../images/img2.jpg" alt="Woman exercising"
+        /></a>
+        <a href="image06.html" class="hover">
+          <span class="title"><h1>Basketball</h1></span>
+          <img src="../images/img6.jpg" alt="Basketball on the ground"
+        /></a>
+        <div></div>
+        <a href="image03.html" class="hover">
+          <span class="title"><h1 class="modal-button">Climbing</h1></span>
+          <img src="../images/img3.jpg" alt="Nike running shoes"
+        /></a>
+        <a href="image07.html" class="hover">
+          <span class="title"><h1>Swimming</h1></span>
+          <img src="../images/img7.jpg" alt="Man swimming butterfly"
+        /></a>
+        <a href="image09.html" class="hover">
+          <span class="title"><h1>Running</h1></span>
+          <img src="../images/img9.jpg" alt="Running track"
+        /></a>
+        <a href="image04.html" class="hover">
+          <span class="title"><h1>Skiing</h1></span>
+          <img src="../images/img4.jpg" alt="Man skiing"
+        /></a>
+        <a href="image10.html" class="hover">
+          <span class="title"><h1>Cycling</h1></span>
+          <img
+            src="../images/img10.jpg"
+            alt="Man with bike on top of the mountain"
+        /></a>
       </div>
     </main>
-    <script src="../scripts/index.js"></script>
+
+    <div class="modal">
+      <span class="close">&times;</span>
+      <img id="img-modal" />
+      <div id="modal-content"></div>
+    </div>
+
+    <script type="text/javascript" src="../scripts/index.js"></script>
   </body>
 </html>
